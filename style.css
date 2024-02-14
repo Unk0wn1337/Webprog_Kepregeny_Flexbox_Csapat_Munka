@@ -4,6 +4,13 @@
     box-sizing: border-box;
   border: 1px solid black;
 }
+nav ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+}
+
+
 
 main{
    margin: auto;
