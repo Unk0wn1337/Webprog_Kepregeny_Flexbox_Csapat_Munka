@@ -3,6 +3,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+nav ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+}
+
+
 
 i{
     font-size:36px
