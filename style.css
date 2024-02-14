@@ -2,5 +2,33 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  border: 1px solid black;
 }
-#kepregeny{}
+
+main{
+   margin: auto;
+  width: 80%;
+}
+#kepregeny{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-self: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+}
+#sor1{
+  flex: 0 0 100%;
+ 
+}
+#sor1 img{ 
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+}
+#keptarolo{
+
+  width: 100%;
+  height: calc(100vh - 50px);
+  overflow: hidden;
+}
