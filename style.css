@@ -156,3 +156,19 @@ main {
   height: calc(100vh - 50px);
   overflow: hidden;
 }
+@media only screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+  .formContainer {
+    flex-direction: column;
+    font-size: 75%;
+  }
+  fieldset {
+    border: none;
+  }
+  #ertekelesIras {
+    width: 50%;
+  }
+
+}
