@@ -1,8 +1,8 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    border: 1px solid black;
+    /*box-sizing: border-box;
+    border: 1px solid black;        ----> nem tudom ki volt, de sajátjánál állítgasson, ne mindenkiénél... class-okat használjunk*/
 }
 body {
     background: rgb(174,232,238);
@@ -14,11 +14,15 @@ nav ul {
     list-style-type: none;
 }
 
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
 
 
 main{
    margin: auto;
-   width: 80%;
+   /*width: 80%;   ----> nem tudom, h ez ki volt, de csak a sajátjánál állítsa be, használjunk class-okat...*/
 }
 #kepregeny{
   display: flex;
