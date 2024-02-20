@@ -5,17 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form</title>
     <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 </head>
-<body>
-    <main>
-        <header>
+<body class="formBody">
+    <main class="formMain">
+        <header class="formHeader">
+            <h1>Értékelés</h1>
         </header>
         <nav>
-            
             <ul>
                 <li><a href="index.html">Képregény</a></li>
                 <li><a href="mese.html">Mese</a></li>
@@ -23,29 +20,71 @@
             </ul>
         </nav>
         <article>
-            <form>
+            <form action="#" method="post">
                 <fieldset>
                     <legend> Ertekeles </legend>
-                    <label for="becenev">Becenev:</label><br>
-                    <input type="text" id="becenev" name="becenev"><br>
-                    <label for="ertekeles">Ertekeles:</label><br>
-                    <input type="radio" id="nagyonTetszett" name="ertekeles" value="HTML">
-                    <label for="nagyonTetszett">Nagyon tetszett</label><br>
-                    <input type="radio" id="nagyonTetszett" name="ertekeles" value="nagyonTetszett">
-                    <label for="nagyonTetszett">Elmegy</label><br>
-                    <input type="radio" id="elmegy" name="ertekeles" value="elmegy">
-                    <label for="inkabbHagyjuk">Inkább hagyjuk...</label><br>
-                    <label for="valasztasChb">Melyik mese tetszett a legjobban?</label><br>
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> Írásosan tálalt mese</label><br>
-                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                    <label for="vehicle2"> Grafikusan illusztrációval elátott mese</label><br>
-                    <textarea id="ertekelesIras" name="ertekelesIras" rows="4" cols="50"></textarea><br>
-                    <input type="submit"><br>
+                    <div class="formContainer">
+                        <div class="formGroup">
+                            <input type="checkbox" id="tartalomFrissites" name="fejlesztesiLehetoseg" value="tartalomFrissites">
+                            <label for="tartalomFrissites">Tartalom frissítése</label><br>
+                            <input type="checkbox" id="designAttekintes" name="fejlesztesiLehetoseg" value="designAttekintes">
+                            <label for="designAttekintes">Design áttekintése</label><br>
+                            <input type="checkbox" id="teljesitmenyOptimalizalas" name="fejlesztesiLehetoseg" value="teljesitmenyOptimalizalas">
+                            <label for="teljesitmenyOptimalizalas">Teljesítmény optimalizálás</label><br>
+                        </div>                        
+                        <div class="formGroup">
+                            <label for="nagyonTetszett">Ertekeld a meseket:</label><br>
+                            <input type="radio" id="nagyonTetszett" name="ertekelesRadio" value="nagyonTetszett">
+                            <label for="nagyonTetszett">Nagyon tetszett</label><br>
+                            <input type="radio" id="nagyonElmegy" name="ertekelesRadio" value="nagyonElmegy">
+                            <label for="nagyonElmegy">Elmegy</label><br>
+                            <input type="radio" id="inkabbHagyjukRadio" name="ertekelesRadio" value="inkabbHagyjuk">
+                            <label for="inkabbHagyjukRadio">Inkább hagyjuk...</label><br>
+                        </div>
+                        
+                        <div class="formGroup">
+                            <label for="irasosMese">Melyik mese tetszett a legjobban?</label><br>
+                            <input type="checkbox" id="irasosMese" name="irasosMese" value="irasosMese">
+                            <label for="irasosMese"> Írásosan tálalt mese</label><br>
+                            <input type="checkbox" id="grafikusMese" name="grafikusMese" value="grafikusMese">
+                            <label for="grafikusMese"> Grafikusan illusztrációval elátott mese</label><br>
+                        </div>
+                        <div class="formGroup">
+                            <label for="tortenetSzervezes">Miben kellene még fejlődnünk?</label><br>
+                            <input type="radio" id="tortenetSzervezes" name="fejlodes" value="tortenetSzervezes">
+                            <label for="tortenetSzervezes">Tortenet szervezesben</label><br>
+                            <input type="radio" id="grafikaiMegjelenites" name="fejlodes" value="grafikaiMegjelenites">
+                            <label for="grafikaiMegjelenites">Grafikai megjelenitésben</label><br>
+                            <input type="radio" id="inkabbHagyjukRadio2" name="fejlodes" value="inkabbHagyjuk2">
+                            <label for="inkabbHagyjukRadio2">Inkább hagyjuk...</label><br>
+                        </div>
+                        <div class="formGroup">
+                            <label>Érdemes nekünk mesét írni a későbbiekben?</label><br>
+                            <input type="radio" id="igenErdemes" name="erdemesIrniRadio" value="igen">
+                            <label for="igenErdemes">Igen, érdemes</label><br>
+                            <input type="radio" id="nemErdemes" name="erdemesIrniRadio" value="nem">
+                            <label for="nemErdemes">Nem, nem érdemes</label><br>
+                        </div>
+                        
+                        <div class="formGroup">
+                            <label>Szeretnél egy oldalt, ahol megoszthatod saját meséidet?</label><br>
+                            <input type="radio" id="igenMegoszt" name="mesekMegosztasaRadio" value="igen">
+                            <label for="igenMegoszt">Igen, szeretném megosztani</label><br>
+                            <input type="radio" id="nemMegoszt" name="mesekMegosztasaRadio" value="nem">
+                            <label for="nemMegoszt">Nem, nem szeretném megosztani</label><br>
+                        </div>
+                        
+                        
+                        <div class="formGroup">
+                            <label for="ertekelesIras">Ird meg a velemenyed</label><br>
+                            <textarea id="ertekelesIras" name="ertekelesIras" rows="4" cols="50"></textarea><br>
+                            <input type="submit" class="kuldesGomb"><br>
+                        </div>
+                    </div>
                 </fieldset>
             </form>
         </article>
-        <footer><i class='fa fa-copyright'></i></footer>
+        <footer class="formFooter"><h1> by Simon Kende</h1></footer>
     </main>
 </body>
 </html>
