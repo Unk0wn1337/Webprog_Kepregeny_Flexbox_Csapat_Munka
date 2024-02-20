@@ -1,22 +1,20 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   border: 1px solid black;
 }
 nav ul {
-    display: flex;
-    gap: 10px;
-    list-style-type: none;
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
 }
 
-
-
-main{
-   margin: auto;
+main {
+  margin: auto;
   width: 80%;
 }
-#kepregeny{
+#kepregeny {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -24,18 +22,50 @@ main{
   align-items: flex-start;
   align-content: stretch;
 }
-#sor1{
+#sor1 {
   flex: 0 0 100%;
- 
 }
-#sor1 img{ 
+#sor2 {
+  display: flex;
+  justify-self: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+  flex: 0 0 50%;
+}
+#sor3 {
+  display: flex;
+  justify-self: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+  flex: 0 0 33%;
+}
+#sor1 img {
   width: 100%;
   background-repeat: no-repeat;
   background-size: contain, cover;
 }
-#keptarolo{
-
+#sor2 img {
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+}
+#sor3 img {
+  width: 33%;
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+}
+#keptarolo {
   width: 100%;
+  height: calc(100vh - 50px);
+  overflow: hidden;
+}
+.keptarolo2{
+  width: 50%;
+  height: calc(100vh - 50px);
+  overflow: hidden;
+}
+.keptarolo23{
+  width: 33%;
   height: calc(100vh - 50px);
   overflow: hidden;
 }
