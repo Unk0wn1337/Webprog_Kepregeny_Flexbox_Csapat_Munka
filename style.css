@@ -157,6 +157,7 @@ main {
   overflow: hidden;
 }
 @media only screen and (max-width: 600px) {
+ /* form reszponziv */
   nav ul {
     flex-direction: column;
   }
@@ -170,5 +171,14 @@ main {
   #ertekelesIras {
     width: 50%;
   }
+  .formFooter {
+   font-size: 50%;
+    
+  }  
+  .formHeader {
+    font-size: 50%;
+  }
 
+
+/* form reszponziv vége */
 }
