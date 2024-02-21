@@ -99,14 +99,6 @@ main {
   margin: auto;
   /*width: 80%;   ----> nem tudom, h ez ki volt, de csak a sajátjánál állítsa be, használjunk class-okat...*/
 }
-#kepregeny {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-self: flex-start;
-  align-items: flex-start;
-  align-content: stretch;
-}
 #sor1 {
   flex: 0 0 100%;
 }
