@@ -13,96 +13,88 @@ body {
   );
 }
 nav ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
-  }
-
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
 
 nav ul li a {
   text-decoration: none;
   color: black;
 }
 
-
 /* form.html kezdet  */
-.formBody{
+.formBody {
   box-sizing: border-box;
 }
 .formMain {
-   max-width: 80%;
-   border: 3px solid black;
-   
-  }
-  
-  .formHeader {
-    text-align: center;
-    height: 50px;
-    border-bottom: 3px solid black;
-    font-family: cursive;
-    
-  }
-  fieldset {
-    border: 1px solid black;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-  }
+  max-width: 80%;
+  border: 3px solid black;
+}
 
-  legend {
-    font-family: cursive;
-   
+.formHeader {
+  text-align: center;
+  height: 50px;
+  border-bottom: 3px solid black;
+  font-family: cursive;
+}
+fieldset {
+  border: 1px solid black;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
 
-  }
-  
-  .formContainer {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 10px;
-    gap: 10px;
-    justify-content: space-between;
-  
+legend {
+  font-family: cursive;
+}
+
+.formContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  gap: 10px;
+  justify-content: space-between;
 }
 .formGroup {
   flex: 0 0 calc(33.33% - 10px);
   font-family: cursive;
-  
 }
 .formGroup:last-child {
   margin: auto;
   text-align: center;
 }
 
-
-.kuldesGomb{
+.kuldesGomb {
   width: 100px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-
 .formFooter {
   text-align: center;
   height: 50px;
   font-family: cursive;
-  
 }
 
 /* form.html vege */
 
 .container {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
-
 
 main {
   margin: auto;
   /*width: 80%;   ----> nem tudom, h ez ki volt, de csak a sajátjánál állítsa be, használjunk class-okat...*/
 }
 #sor1 {
+  border: 5px solid black;
+  padding: 20px;
+  margin-bottom: 10px;
   flex: 0 0 100%;
 }
 #sor2 {
+  border: 5px solid black;
   display: flex;
   justify-self: flex-start;
   align-items: flex-start;
@@ -110,6 +102,7 @@ main {
   flex: 0 0 50%;
 }
 #sor3 {
+  border: 5px solid black;
   display: flex;
   justify-self: flex-start;
   align-items: flex-start;
@@ -122,34 +115,40 @@ main {
   background-size: contain, cover;
 }
 #sor2 img {
-  width: 50%;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: contain, cover;
 }
 #sor3 img {
-  width: 33%;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: contain, cover;
 }
+#sor4{
+  justify-content: center;
+}
 #keptarolo {
+  margin: 10px;
   width: 100%;
-  height: calc(100vh - 50px);
+  border: 5px solid black;
   overflow: hidden;
 }
 .keptarolo2 {
+  margin: 10px;
   align-self: stretch;
   width: 50%;
-  height: calc(100vh - 50px);
+  border: 5px solid black;
   overflow: hidden;
 }
 .keptarolo3 {
+  border: 5px solid black;
+  margin: 10px;
   align-self: stretch;
   width: 33%;
-  height: calc(100vh - 50px);
   overflow: hidden;
 }
 @media only screen and (max-width: 600px) {
- /* form reszponziv */
+  /* form reszponziv */
   nav ul {
     flex-direction: column;
   }
@@ -164,54 +163,52 @@ main {
     width: 50%;
   }
   .formFooter {
-   font-size: 50%;
-    
-  }  
+    font-size: 50%;
+  }
   .formHeader {
     font-size: 50%;
   }
 
-
-/* form reszponziv vége */
+  /* form reszponziv vége */
 }
 
 /*Viki - mas NE nyuljon bele*/
 
 .containerV {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: baseline;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    gap: 1em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 1em;
 }
 .mesek {
-    flex-basis: 300px;
-    align-items: center;
+  flex-basis: 300px;
+  align-items: center;
 }
 .meseHeader {
-    justify-content: center;
-    align-items: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 .meseFooter {
-    justify-content: center;
-    align-items: flex-end;
-    margin-top: 10%;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 10%;
 }
-.meseNav{
-    border-bottom: 1px solid grey;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 2%;
+.meseNav {
+  border-bottom: 1px solid grey;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 2%;
 }
-.cim{
-    margin-bottom: 3%;
-    text-align: center;
+.cim {
+  margin-bottom: 3%;
+  text-align: center;
 }
-.meseszov{
-    text-align: justify;
+.meseszov {
+  text-align: justify;
 }
 
 /*Viki - vege*/
